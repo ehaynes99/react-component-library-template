@@ -24,6 +24,14 @@ export default {
     },
   ],
   plugins: [
+    babel({
+      exclude: 'node_modules/**',
+    }),
+    commonjs(),
+    postcss({
+      extract: false,
+      use: ['sass'],
+    }),
     includePaths({
       paths: ['src'],
     }),
@@ -31,15 +39,6 @@ export default {
       'process.env.NODE_ENV': JSON.stringify(NODE_ENV),
     }),
     external(),
-    postcss({
-      extract: false,
-      modules: true,
-      use: ['sass'],
-    }),
-    babel({
-      exclude: 'node_modules/**',
-    }),
     resolve(),
-    commonjs(),
   ],
 }
