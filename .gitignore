@@ -1,0 +1,13 @@
+node_modules/
+/coverage/
+/dist/
+/demo/build/
+/flow-typed/
+/tmp/
+
+.npm
+.history
+.vscode
+.DS_Store
+
+npm-debug.log*
