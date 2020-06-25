@@ -20,7 +20,7 @@
     "react/jsx-boolean-value": "off",
     "react/prop-types": "off",
     "no-return-assign": "off",
-    "arrow-parens": [2, "as-needed", { "requireForBlockBody": true }],
+    "arrow-parens": ["error", "always"],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
   }
