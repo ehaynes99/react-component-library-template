@@ -1,10 +1,10 @@
 import React from 'react'
-import './TestComponent.scss'
+import styles from './TestComponent.module.scss'
 
 const TestComponent = () => {
 
   return (
-    <div className="test-component">
+    <div className={styles.testComponent}>
       <h1 className="test-header">Test Header</h1>
     </div>
   )
